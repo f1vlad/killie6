@@ -1,0 +1,1 @@
+This project helps web developers lobby a move of general user from ie6 to more normal browser such as ie7.
