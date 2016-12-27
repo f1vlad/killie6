@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+<title>killie6</title>
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">//<![CDATA[
+
+/*ie6 detection*/
+var is_ie6 = (window.external && typeof window.XMLHttpRequest == "undefined");
+
+$(document).ready(function(){
+
+var r="http://www.microsoft.com/windows/downloads/ie/";/*onclick destination*/
+var d=1000;/*delay before killie6 display*/
+
+/*dymanically adding div*/
+$("body").append("<div class=\"killie6\"><p><a href=\""+r+"\">To help protect your security, you must immediately download latest version of Internet Explorer. Click here to proceed</a>.</p><span><a>x</a></span></div>");
+
+/*dynamically adding killie6 styles*/
+$("head").append('<style type="text/css">div.killie6{display:none;z-index:100;background:#ffffe1;height:21px;padding:0pt;margin:0pt;position:absolute;top:0pt;left:0pt;width:100%;border-bottom:1px solid #716f64;border-top:1px solid #e0dfd0;}div.killie6 p{padding:0pt;margin:0pt;height:21px;border-bottom:1px solid #aca899;border-top:1px solid #cdcabb;background:url\("1.gif"\) no-repeat 3px center;text-indent:22px;font-family:Arial,sans-serif !important;font-size:11px !important;font-weight:lighter;line-height:21px;overflow:hidden;text-align:left !important;}div.killie6 p,div.killie6 p a{color:#000;text-decoration:none;}div.killie6 span a{background:url\("x.gif"\) no-repeat top left;text-indent:-9999px;display:block;position:absolute;right:5px;top:5px;width:8px;height:8px;padding:0pt .1em;margin:0pt;}</style>');
+
+function showKillie6(){
+	$("div.killie6").show("fast");scrollTo(0,0);
+}
+
+if(is_ie6){
+	setTimeout(showKillie6,d);
+}
+
+$("div.killie6 span a").mousedown(function(){
+	$("div.killie6").slideUp("fast");
+});
+
+$("div.killie6 p").mousedown(function(){
+	alert("You will be forwarded to official Microsoft website to download recent version of Internet Explorer.");
+	window.location=r;
+})
+
+;});
+
+//]]>
+</script>
+
+</head>
+<body>
+<h1>killie6</h1>
+<p><acronym title="Kill Internet Explorer 6">killie6</acronym> is a plug-in for your website to do nothing short of tricking user to download more recent browser of Internet Explorer. It will only get activated when user is running IE6.</p>
+<p>Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. Welcome hopefully we'll be able to make ie6 the past! I hope we will. </p>
+</body>
+</html>

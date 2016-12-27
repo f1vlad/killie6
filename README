@@ -1,0 +1,39 @@
+MAINTANERS
+==========
+Vlad Kulchitski, http://f1vlad.com
+
+=======
+killie6 (experimental development version)
+=======
+
+Killie6 is a website plug-in to achieve nothing short of tricking your website 
+visitor into downloading a more recent version of Internet Explorer.
+
+This plug-in activates only on Internet Explorer 6. Hence the name of the 
+project killie6 (Kill IE6)
+
+Despite a negative word in the name of the plug-in, the aim of this is truly
+positive. I will help both developers and your website visitors.
+
+=================
+REPLEASE CONTENTS
+=================
+
+1). index.html -- unpackaged ie6 demo
+2). index-minified.html -- packaged ie6 demo
+3). index-WORKS-ON-NON-IE-FOR-DEMO.html -- crossbrowser working copy (for demonstration)
+4). essential.html -- js code to insert to html document
+5). 1.gif -- windows-style shield icon
+6). x.gif -- windows-style cross button
+7). killie6.png -- screenshot of killie6
+8). jquery.js -- jquery package
+9). README
+
+===========
+GET STARTED
+===========
+
+To get started with this package simply copy and paste contents of 
+<essential.html> into your web page beteen <head> and </head>. 
+Put 1.gif and x.gif files in the same folder with your website.
+If you don't have jquery.js include already, please add that as well.
